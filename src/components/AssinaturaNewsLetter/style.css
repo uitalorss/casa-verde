@@ -1,0 +1,19 @@
+.newsletter{
+ display: flex;
+ align-items: center;
+}
+
+.newsletter input{
+  padding: 1rem 0.5rem;
+  width: 25%;
+  border: none;
+  outline: none;
+  color: #202020;
+}
+
+.newsletter button{
+  padding: 1rem 0.75rem;
+  border: none;
+  background: #FFCB47;
+  color: #ffffff;
+}
