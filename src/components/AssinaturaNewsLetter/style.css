@@ -1,5 +1,9 @@
 .intro{
-  width: 50%;
+  display: flex;
+}
+
+.ilustration{
+  margin-top: -4rem;
 }
 
 .text-newsletter{
@@ -27,12 +31,12 @@
 }
 
 
-.newsletter{
+.form-newsletter{
  display: flex;
  align-items: center;
 }
 
-.newsletter input{
+.form-newsletter input{
   padding: 1rem 0.5rem;
   width: 60%;
   border: none;
@@ -40,7 +44,7 @@
   color: #202020;
 }
 
-.newsletter button{
+.form-newsletter button{
   padding: 1rem 0.75rem;
   border: none;
   background: #FFCB47;
