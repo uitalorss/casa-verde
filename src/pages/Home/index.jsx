@@ -1,7 +1,10 @@
-
+import { Menu } from '../../components/Menu'
+import './style.css'
 function App() {
   return (
-    <h3>Amigo, estou aqui.</h3>
+    <div className="container">
+      <Menu />
+    </div>
   )
 }
 
