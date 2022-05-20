@@ -1,36 +1,3 @@
-.intro{
-  display: flex;
-}
-
-.ilustration{
-  margin-top: -4rem;
-}
-
-.text-newsletter{
-  margin-top: 10rem;
-  margin-bottom: 2rem;
-}
-
-.text-newsletter .title{
-  font-size: 1.375rem;
-  margin-bottom: .75rem;
-  color: #202020;
-}
-
-.text-newsletter .special{
-  font-family: 'Elsie Swash Caps', cursive;
-  font-size: 5.125rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.text-newsletter .description{
-  width: 80%;
-  line-height: 26px;
-  color: #202020;
-}
-
-
 .form-newsletter{
  display: flex;
  align-items: center;
