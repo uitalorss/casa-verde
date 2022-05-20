@@ -1,11 +1,11 @@
-import './style.css'
 import logo from '../../assets/logo-casa-verde.svg'
+import {HeaderMenu, MenuItem} from './styles'
 
 export function Menu(){
   return(
-    <header>
+    <HeaderMenu>
       <img src={logo} alt="logo-empresa-casa-verde"></img>
-      <ul>
+      <MenuItem>
         <li>
           <a href="">Como fazer</a>
         </li>
@@ -25,7 +25,7 @@ export function Menu(){
         <li>
           <a href="">Meu carrinho</a>
         </li>
-      </ul>
-    </header>
+      </MenuItem>
+    </HeaderMenu>
   )
 }
