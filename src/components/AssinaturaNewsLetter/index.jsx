@@ -1,7 +1,15 @@
 import {Intro, Newsletter, Ilustration} from './styles'
 import imgIlustracao from '../../assets/imagem-hero-1.png'
+import { useState } from 'react'
 
 export function AssinaturaNewsLetter(){
+  const [email, setEmail] = useState('');
+
+  function validateMail(mail){
+    const testMail = /\S+@\S+\.\S+/;
+    return testMail.test(mail) ? alert("Email validado") : alert("Email inválido");
+  }
+
   return(
     <Intro>
       <div className='text-newsletter'>
@@ -11,8 +19,13 @@ export function AssinaturaNewsLetter(){
         <Newsletter>
           <input 
           type="text"
-          placeholder='insira o seu e-mail' />
-          <button type='button'>Assinar Newsletter</button>
+          placeholder='insira o seu e-mail' 
+          onChange={e => {setEmail(e.target.value)}}
+          />
+          <button 
+          type='button'
+          onSubmit={validateMail(email)}
+          >Assinar Newsletter</button>
         </Newsletter>
       </div>
       <Ilustration>
