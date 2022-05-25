@@ -1,12 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 import { ResetCSS } from './ResetCSS';
-import banner from '../assets/bg-yellow.svg'
+import banner from '../assets/bg-yellow.svg';
+import bg from '../assets/bg.jpg';
 
 export const GlobalStyle = createGlobalStyle`
 ${ResetCSS}
 body{
 	font-family: 'Montserrat', sans-serif;
-	background: url(${banner}) no-repeat top right;
+	background-image: url(${banner}), url(${bg});
+  background-repeat: no-repeat, repeat-x;
+  background-position: right top;
 }
 
 @media (max-width: 1080px){
