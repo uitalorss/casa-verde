@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
 export const Intro = styled.div`
-  display: flex;
-  .ilustration{
-    margin-top: -4rem;
-  }
-  .text-newsletter{
-  margin-top: 10rem;
-  margin-bottom: 2rem;
+display: flex;
+justify-content: center;
+.text-newsletter{
+margin-top: 10rem;
+margin-bottom: 2rem;
 }
 
 .text-newsletter .title{
@@ -24,28 +22,31 @@ export const Intro = styled.div`
 }
 
 .text-newsletter .description{
-  width: 80%;
   line-height: 26px;
   color: #202020;
+  margin-bottom: 1rem;
 }
+`
 
-.form-newsletter{
- display: flex;
- align-items: center;
-}
+export const Newsletter = styled.form`
+  display: flex;
+  align-items: center;
+  input{
+    padding: 1rem 0.5rem;
+    width: 60%;
+    border: none;
+    outline: none;
+    color: #202020;
+  }
 
-.form-newsletter input{
-  padding: 1rem 0.5rem;
-  width: 60%;
-  border: none;
-  outline: none;
-  color: #202020;
-}
+  button{
+    padding: 1rem 0.75rem;
+    border: none;
+    background: #FFCB47;
+    color: #ffffff;
+  }
+`
 
-.form-newsletter button{
-  padding: 1rem 0.75rem;
-  border: none;
-  background: #FFCB47;
-  color: #ffffff;
-}
+export const Ilustration = styled.div`
+  margin-top: -4rem;
 `
