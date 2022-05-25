@@ -1,6 +1,5 @@
 import logo from '../../assets/logo-casa-verde.svg'
 import {Header, NavMenu} from './styles'
-
 export function Menu(){
   return(
     <Header>

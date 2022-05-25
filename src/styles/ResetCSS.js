@@ -1,3 +1,6 @@
+import { css } from 'styled-components';
+
+export const ResetCSS = css`
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,26 +49,4 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-body{
-	font-family: 'Montserrat', sans-serif;
-	background: #f5f6fa;
-}
-
-@media (max-width: 1080px){
-  body{
-    font-size: 93.75%;
-  }
-}
-
-@media only screen and (max-width: 720px){
-  body{
-    font-size: 87.5%;
-  }
-}
-
-@media (max-width: 540px){
-  body{
-    font-size: 75%;
-  }
-}
+`

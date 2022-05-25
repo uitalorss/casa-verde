@@ -1,5 +1,3 @@
-import './style.css'
-
 export function AssinaturaNewsLetter(){
   return(
     <div className='intro'>
