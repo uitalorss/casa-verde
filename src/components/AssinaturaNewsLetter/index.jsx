@@ -19,6 +19,5 @@ export function AssinaturaNewsLetter(){
           <img src={imgIlustracao} alt="imagem de planta como ilustração" />
       </Ilustration>
     </Intro>
-        
   )
 }
