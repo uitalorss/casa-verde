@@ -44,6 +44,11 @@ export const Newsletter = styled.form`
     border: none;
     background: #FFCB47;
     color: #ffffff;
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+      background: #f1c40f;
+    }
   }
 `
 

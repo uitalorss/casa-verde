@@ -3,11 +3,11 @@ import imgIlustracao from '../../assets/imagem-hero-1.png'
 import { useState } from 'react'
 
 export function AssinaturaNewsLetter(){
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState();
 
-  function validateMail(mail){
+  function validateMail(){
     const testMail = /\S+@\S+\.\S+/;
-    return testMail.test(mail) ? alert("Email validado") : alert("Email inválido");
+    return testMail.test(email) ? alert("Email validado") : alert("Email inválido");
   }
 
   return(
@@ -24,7 +24,7 @@ export function AssinaturaNewsLetter(){
           />
           <button 
           type='button'
-          onSubmit={validateMail(email)}
+          onClick={validateMail}
           >Assinar Newsletter</button>
         </Newsletter>
       </div>
