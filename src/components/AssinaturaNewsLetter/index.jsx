@@ -7,7 +7,10 @@ export function AssinaturaNewsLetter(){
 
   function validateMail(){
     const testMail = /\S+@\S+\.\S+/;
-    return testMail.test(email) ? alert("Email validado") : alert("Email inválido");
+    return testMail.test(email) ? 
+    alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail ${email}`) 
+    : 
+    alert("Email inválido");
   }
 
   return(
